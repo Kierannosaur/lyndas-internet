@@ -439,13 +439,21 @@
       <div class="tile-desc">Beautiful NZ gardens</div>
     </div>
 
-    <!-- Wide tile for video calling -->
-    <div class="tile tile-sage tile-wide" onclick="openSite('https://facetime.apple.com/join#v=1&p=XskG8gZ8EfGetDpCXBEAkw&k=VkT2WGA2IFJ6t2TkT-pkN4OY-xx6KoDzfkMQojxT0SY', 'Video Call')">
-      <div class="tile-icon">📞</div>
-      <div class="tile-content">
+    <!-- Kieran row — always 2 columns -->
+    <div style="grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+
+      <div class="tile tile-sage" onclick="openSite('https://facetime.apple.com/join#v=1&p=XskG8gZ8EfGetDpCXBEAkw&k=VkT2WGA2IFJ6t2TkT-pkN4OY-xx6KoDzfkMQojxT0SY', 'Video Call')">
+        <div class="tile-icon">📞</div>
         <div class="tile-label">Video Call with Kieran</div>
         <div class="tile-desc">See and speak to Kieran (if he's awake!)</div>
       </div>
+
+      <div class="tile tile-rose" onclick="openSite('https://www.kieranrayner.com', 'Kieran\'s Website')">
+        <div class="tile-icon">🌐</div>
+        <div class="tile-label">Kieran's Website</div>
+        <div class="tile-desc">Kieran's professional singing website</div>
+      </div>
+
     </div>
 
   </div>
@@ -472,7 +480,7 @@
     'youtube.com',
     'gardens.org.nz',
     'theatreview.org.nz',
-    'facetime.apple.com',
+    'kieranrayner.com',
     'zoom.us',
   ];
 
