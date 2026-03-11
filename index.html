@@ -493,8 +493,11 @@
   }
 
   function openSite(url, label) {
-    if (!isAllowed(url)) { showBlocked(); return; }
-    window.open(url, '_blank');
+    if (url.startsWith('https://facetime.apple.com') || isAllowed(url)) {
+      window.open(url, '_blank');
+    } else {
+      showBlocked();
+    }
   }
 
   function goHome() {
